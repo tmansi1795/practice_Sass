@@ -6,13 +6,25 @@ html {
   padding: 0px;
   margin: 0px; }
 
+ul {
+  margin: 0; }
+
 body {
-  background: #D36060;
+  background: #ECE8E8;
   font-size: 14px;
   font-family: Arial;
+  color: #545454;
   margin: 0px;
   padding: 0px;
   line-height: 1.5em; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #3b3b3b;
+  line-height: 1.25; }
 
 #site__header {
   background: #222222;
@@ -26,6 +38,15 @@ body {
   width: 1200px;
   margin: 50px auto;
   display: flex; }
+
+.article__single .article__inner {
+  display: flex;
+  padding: 80px; }
+
+.article__single .sidebar {
+  padding-right: 40px;
+  margin-right: 40px;
+  flex: 0 0 300px; }
 
 .article .article__header {
   text-align: center;
@@ -61,9 +82,79 @@ body {
     border: 3px solid #FFF;
     border-radius: 20px;
     padding: 20px 40px;
-    transition: 0.3s ease background, 0.3s ease border-radius; }
+    transition: 0.3s ease background, 0.3s ease border-radius; }
     .actions .action__btn:hover {
-      background: #e9b0b0;
+      background: #6666ff;
       border-radius: 0; }
     .actions .action__btn.last-child {
       margin-right: 0; }
+
+.article__inner {
+  background: #FFFFFF; }
+
+.content p,
+.content pre,
+.content ul,
+.content ol,
+.content table,
+.content img > div {
+  margin-bottom: 25px; }
+
+.content h2 {
+  font-size: 70px;
+  margin: 50px 0; }
+
+.content h3 {
+  font-size: 40px;
+  margin: 50px 0; }
+
+.content img {
+  margin: 35px auto;
+  max-width: 100%; }
+
+.content a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 3px 8px;
+  transition: 0.3s ease all; }
+  .content a:hover {
+    background: #ccccff;
+    color: #000033; }
+
+.content li {
+  margin-bottom: 25px;
+  list-style-type: none; }
+
+.content pre {
+  background: #3b3b3b;
+  color: #ededed;
+  padding: 50px;
+  border-radius: 4px;
+  border-left: 20px solid blue;
+  text-align: left; }
+
+.sidebar {
+  width: 300px; }
+  .sidebar .sidebar__box {
+    margin-bottom: 20px; }
+    .sidebar .sidebar__box:last-child {
+      margin-bottom: 0; }
+  .sidebar h3 {
+    margin: 0 0 20px;
+    color: #878787;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300; }
+  .sidebar img {
+    max-width: 100%; }
+
+.table-of-contents {
+  list-style: none; }
+  .table-of-contents a {
+    font-size: 18px;
+    display: block;
+    padding: 5px 0;
+    text-decoration: none;
+    color: #949494; }
+    .table-of-contents a:hover {
+      text-decoration: underline; }
